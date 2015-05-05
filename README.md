@@ -1,7 +1,7 @@
 # grunt-polyfiller
 
 [![npm version badge](https://img.shields.io/npm/v/grunt-polyfiller.svg)](https://www.npmjs.org/package/grunt-polyfiller)
-[![Build Status](https://travis-ci.org/monolithed/grunt-polyfiller.png)](https://travis-ci.org/monolithed/grunt-polyfiller)
+[![Build Status](https://travis-ci.org/Polyfiller/grunt-polyfiller.png)](https://travis-ci.org/Polyfiller/grunt-polyfiller)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.txt)
 
 
