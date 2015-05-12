@@ -52,70 +52,10 @@ module.exports = function (grunt) {
 
 ### Options
 
-#### catalog
-Type: `Array` <br />
-Default: `[trunk/catalog]`
+Type: `Object`.
 
-Have custom polyfills? Add paths to their location here.
+All of options are the options for the [Polyfiller](https://github.com/Polyfiller/polyfiller) itself, except these ones: 
 
-```js
-var path = require('path');
-
-....
-options: {
-	catalog: [ 
-		path.resolve(__dirname, '../your/catalog') 
-	]
-}
-....
-```
-
-#### exclude
-
-Type: `Array` <br />
-Default: `[]`
-
-Some polyfills have dependencies that you can exclude here.
-
-```js
-....
-options: {
-	exclude: ['setImmediate']
-}
-....
-```
-
-#### verbose
-
-Type: `Boolean` <br />
-Default: `false`
-
-Verbose mode is an option that provides additional details as to what the package is doing.
-
-```js
-....
-options: {
-	verbose: true
-}
-....
-```
-
-#### wrapper
-
-Type: `Function` <br />
-Default: `None`
-
-A custom wrapper for your environment
-
-```js
-....
-options: {
-	wrapper: function (source) {
-		return ';(function () {' + source + '}.call(self));'
-	}
-}
-....
-```
 
 #### process
 
