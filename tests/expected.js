@@ -1,4 +1,4 @@
-try {"use strict";(function (global, undefined) {
+try {(function (global, undefined) {
     "use strict";
 
     if (global.setImmediate) {
@@ -483,4 +483,4 @@ try {"use strict";(function (global, undefined) {
     }
 
 }(this));
-} catch (error) {}
+"use strict";} catch (error) {}
