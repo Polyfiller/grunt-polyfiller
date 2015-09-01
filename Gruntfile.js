@@ -1,42 +1,42 @@
 'use strict';
 
 module.exports = function (grunt) {
-	grunt.initConfig({
-		polyfiller: {
-			test: {
-				options: {
-					features: [ 'Promise', 'Fetch' ],
+    grunt.initConfig({
+        polyfiller: {
+            test: {
+                options: {
+                    features: [ 'Promise', 'Fetch' ],
 
-					process: function (feature, name, features) {
-						if (name == 'Fetch') {
-							return '"use strict";'
-						}
+                    process: function (feature, name, features) {
+                        if (name == 'Fetch') {
+                            return '"use strict";'
+                        }
 
-						return feature.source;
-					},
+                        return feature.source;
+                    },
 
-					wrapper: function (content) {
-						return 'try {' + content + '} catch (error) {}'
-					}
-				},
+                    wrapper: function (content) {
+                        return 'try {' + content + '} catch (error) {}'
+                    }
+                },
 
-				dest: 'cache/actual.js'
-			}
-		},
+                dest: 'cache/actual.js'
+            }
+        },
 
-		clean: {
-			test: ['cache']
-		},
+        clean: {
+            test: ['cache']
+        },
 
-		nodeunit: {
-			tasks: ['tests/test.js']
-		}
-	});
+        nodeunit: {
+            tasks: ['tests/test.js']
+        }
+    });
 
-	grunt.loadTasks('tasks');
-	grunt.loadNpmTasks('grunt-contrib-nodeunit');
-	grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadTasks('tasks');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-	grunt.registerTask('test', ['clean', 'polyfiller:test', 'nodeunit']);
-	grunt.registerTask('default', ['test']);
+    grunt.registerTask('test', ['clean', 'polyfiller:test', 'nodeunit']);
+    grunt.registerTask('default', ['test']);
 };

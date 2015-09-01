@@ -1,47 +1,42 @@
 {
-	"name"    : "grunt-polyfiller",
-	"version" : "0.0.1",
-	"author"  : "Abashkin Alexander <monolithed@gmail.com>",
-	"homepage": "https://github.com/Polyfiller/grunt-polyfiller.git",
+    "name"    : "grunt-polyfiller",
+    "version" : "0.0.2",
+    "author"  : "Abashkin Alexander <monolithed@gmail.com>",
+    "homepage": "https://github.com/Polyfiller/grunt-polyfiller.git",
 
-	"description": "A polyfill combinator",
+    "description": "A polyfill combinator",
 
-	"keywords": [ "grunt", "polyfill", "es5", "es6", "es7", "ecmascript", "harmony", "strawman" ],
+    "keywords": [ "grunt", "polyfill", "es5", "es6", "es7", "ecmascript", "harmony", "strawman" ],
 
-	"man": "README.md",
+    "man": "README.md",
 
-	"engines": {
-		"node": ">=0.10.28"
-	},
+    "engines": {
+        "node": ">=0.10.28"
+    },
 
-	"repository": {
-		"type": "git",
-		"url" :  "https://github.com/Polyfiller/grunt-polyfiller.git"
-	},
+    "repository": {
+        "type": "git",
+        "url" :  "https://github.com/Polyfiller/grunt-polyfiller.git"
+    },
 
-	"bugs": {
-		"url": "https://github.com/Polyfiller/grunt-polyfiller/issues"
-	},
+    "bugs": {
+        "url": "https://github.com/Polyfiller/grunt-polyfiller/issues"
+    },
 
-	"scripts": {
-		"test": "grunt test"
-	},
+    "scripts": {
+        "test": "grunt test"
+    },
 
-	"dependencies": {
-		"grunt"              : "^0.4.5",
-		"grunt-cli"          : "^0.1.13",
-		"grunt-contrib-clean": "^0.6.0",
-		"polyfiller"         : "^0.0.6"
-	},
+    "dependencies": {
+        "grunt"              : "^0.4.5",
+        "grunt-cli"          : "^0.1.13",
+        "grunt-contrib-clean": "^0.6.0",
+        "polyfiller"         : "^0.0.31"
+    },
 
-	"devDependencies": {
-		"grunt-contrib-nodeunit": "^0.4.1"
-	},
+    "devDependencies": {
+        "grunt-contrib-nodeunit": "^0.4.1"
+    },
 
-	"licenses": [
-		{
-			"type": "MIT",
-			"url" : "http://www.opensource.org/licenses/mit-license.php"
-		}
-	]
+    "license": "MIT"
 }
