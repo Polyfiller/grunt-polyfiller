@@ -23,7 +23,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-polyfiller');
 ```
 
-## grunt-transform task
+## grunt-polyfiller task
 _Run this task with the `grunt polyfiller` command._
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
