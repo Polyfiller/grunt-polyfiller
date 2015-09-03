@@ -1,6 +1,6 @@
 {
     "name"    : "grunt-polyfiller",
-    "version" : "0.0.3",
+    "version" : "0.0.4",
     "author"  : "Abashkin Alexander <monolithed@gmail.com>",
     "homepage": "https://github.com/Polyfiller/grunt-polyfiller.git",
 
